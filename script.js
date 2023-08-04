@@ -24,5 +24,6 @@ window.addEventListener("load", function() {
     let cargoSubmit = document.querySelector("input[name=cargoMass]");
     formSubmission(document, bottomList, pilotSubmit, copilotSubmit, fuelSubmit, cargoSubmit);
     //formSubmission(document, bottomList, mainPilot, mainCoPilot, fuelLevel, cargoLevel)
+    //changes
    })
 });
