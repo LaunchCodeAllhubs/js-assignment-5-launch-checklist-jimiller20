@@ -44,7 +44,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     inputs.push(validateInput(pilot.value), validateInput(copilot.value), validateInput(fuelLevel.value), validateInput(cargoLevel.value))
     if (inputs.includes("Empty")) {alert("All fields are required!")}
     let totalInputs = inputs[0] + inputs[1] + inputs[2] + inputs[3]
-    if (totalInputs !== "Not a NumberNot a NumberIs a NumberIs a Number" && !totalInputs.includes("Empty")) {alert("Make sure to enter valid information for each field!")} 
+    if (totalInputs !== "Not a NumberNot a NumberIs a NumberIs a Number" && !totalInputs.includes("Empty")) {window.alert("Make sure to enter valid information for each field!")} 
     
     const mainPilot = document.getElementById("pilotStatus")
     const mainCoPilot = document.getElementById("copilotStatus")
