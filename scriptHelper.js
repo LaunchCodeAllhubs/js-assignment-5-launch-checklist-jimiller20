@@ -55,6 +55,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     mainPilot.innerHTML = `${pilot.value} is ready for launch`;
     mainCoPilot.innerHTML = `${copilot.value} is ready for launch`;
     let numOfErr = []
+    list.style.visibility = "hidden"
     if (fuelLevel.value < 10000 && !totalInputs.includes("Empty")) {
         list.style.visibility = "visible"
         mainFuel.innerHTML = "Not enough fuel for the journey"
@@ -73,7 +74,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         list.style.visibility = "visible"
         mainShip.innerHTML = "Shuttle is ready for launch"
         mainShip.style.color = "#419F6A"
-    }    
+    }
 }
 
 async function myFetch() {
